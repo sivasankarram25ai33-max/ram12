@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background: linear-gradient(45deg, #0f0c29, #302b63, #24243e); /* கலர்ஃபுல் பேக்ரவுண்ட் */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1); /* லேசான வெள்ளை */
+            backdrop-filter: blur(15px); /* இதான் அந்த பிளர் எஃபெக்ட் */
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            width: 350px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            color: white;
+            transition: transform 0.3s;
+        .glass-card:hover {
+            transform: scale(1.05);
+            border: 1px solid cyan;
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid cyan;
+            margin-bottom: 15px;
+        }
+
+        h2 { margin: 10px 0; color: cyan; }
+        p { font-size: 14px; opacity: 0.8; }
+
+        .btn {
+            background: cyan;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glass-card">
+        <img src="e:\sankar.jpg" class="profile-img">
+        <h2>RAHUL</h2>
+        <p>B.Sc Artificial Intelligence Student</p>
+        <p>NAAS COLLAGE</p>
+        
+        <div style="text-align: left; margin-top: 20px;">
+            <div><b>Skills:</b> HTML5, CSS3</div>
+            <div><b>Interest:</b> Web Designing</div>
+        </div>
+
+        <button class="btn">View Profile</button>
+    </div>
+
+</body>
+</html>
